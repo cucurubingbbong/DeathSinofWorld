@@ -4,7 +4,6 @@ public class InputManager : ManagerBase
 {
     public override void Init()
     {
-        base.Init();
         GlobalEventBus.eventBus.SubScribe<InputData>(OnKeyInput);
     } 
 

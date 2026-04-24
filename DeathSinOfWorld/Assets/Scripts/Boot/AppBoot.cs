@@ -31,7 +31,8 @@ public class AppBoot : MonoBehaviour
             {
                 ManagerBase mb = Instantiate(managerBase);
                 DontDestroyOnLoad(mb.gameObject);
-                mb.Init();
+                if(sceneEventBus != null) mb.Init(sceneEventBus.eventBus);
+                else mb.Init();
             }
         }
 
@@ -40,7 +41,8 @@ public class AppBoot : MonoBehaviour
             foreach (ManagerBase managerBase in bootData.Managers)
             {
                 ManagerBase mb = Instantiate(managerBase);
-                mb.Init();
+                if(sceneEventBus != null) mb.Init(sceneEventBus.eventBus);
+                else mb.Init();
             }
         }
     }

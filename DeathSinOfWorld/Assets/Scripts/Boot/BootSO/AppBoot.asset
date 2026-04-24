@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: AppBoot
   m_EditorClassIdentifier: Assembly-CSharp::BootData
   _managers:
+  - {fileID: 5011406865858528487, guid: 96d2bb2ba50e86046b156762d561e18f, type: 3}
   - {fileID: 8250739343889779319, guid: 5de62e436bc0ce8468e41d0ea1a593d0, type: 3}
+  - {fileID: 4170881841738009666, guid: 2012781d3b1a91f43b427b2bb2eacbbb, type: 3}
+  - {fileID: 7429890894769909392, guid: 120ca6f084d08184f8616614f6bb5093, type: 3}
+  - {fileID: 182335299053069168, guid: d7f1c77d5ff510242a0f2d0ebff22e04, type: 3}

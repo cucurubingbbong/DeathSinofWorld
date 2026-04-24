@@ -166,7 +166,7 @@ MonoBehaviour:
   sceneEventBus: {fileID: 0}
   bootData: {fileID: 11400000, guid: 188501ce7aeb081499ce32e2608388cb, type: 2}
   isDontDestroyOnLoad: 1
-  SceneName: Title_Scene
+  SceneName: Game_Scene
   isLoadScene: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
