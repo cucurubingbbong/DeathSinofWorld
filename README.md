@@ -1,2 +1,2 @@
 # DeathSinofWorld
-죽음과 죄를 모티브로 한 턴제게임
+죄악 공명 잔혹 RPG 
