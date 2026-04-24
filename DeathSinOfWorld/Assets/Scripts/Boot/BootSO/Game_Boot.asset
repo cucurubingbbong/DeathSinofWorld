@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7abb97d722b4c4b4db26de6fd5ff41a2, type: 3}
   m_Name: Game_Boot
   m_EditorClassIdentifier: Assembly-CSharp::BootData
-  _managers: []
+  _managers:
+  - {fileID: 1983699137819814532, guid: 1b5a672cdd1aeb54db8d0171ad37e0ae, type: 3}
