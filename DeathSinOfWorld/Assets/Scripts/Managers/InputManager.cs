@@ -10,7 +10,7 @@ public class InputManager : ManagerBase
 
     private void OnKeyInput(InputData inputData)
     {
-        Debug.Log($"키를 입력받았습니다: {inputData.key}");
+        //Debug.Log($"키를 입력받았습니다: {inputData.key}");
     }
 
     void Update()

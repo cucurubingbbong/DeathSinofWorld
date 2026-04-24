@@ -7,9 +7,9 @@ public class AppBoot : MonoBehaviour
     /// 씬 이벤트 버스
     [SerializeField] private SceneEventBus sceneEventBus;
     /// <summary>
-    /// 초기화할 매니저 배열
+    /// 초기화할 매니저들
     /// </summary>
-    [SerializeField] private ManagerBase[] managerBases;
+    [SerializeField] private BootData bootData;
 
     [Header("파괴되는지 여부 여부")]
     /// <summary>
@@ -27,17 +27,20 @@ public class AppBoot : MonoBehaviour
 
         if (isDontDestroyOnLoad)
         {
-            foreach (var managerBase in managerBases)
+            foreach (ManagerBase managerBase in bootData.Managers)
             {
-                managerBase.Init();
-                DontDestroyOnLoad(managerBase);
+                ManagerBase mb = Instantiate(managerBase);
+                DontDestroyOnLoad(mb.gameObject);
+                mb.Init();
             }
         }
+
         else
         {
-            foreach (var managerBase in managerBases)
+            foreach (ManagerBase managerBase in bootData.Managers)
             {
-                managerBase.Init();
+                ManagerBase mb = Instantiate(managerBase);
+                mb.Init();
             }
         }
     }
