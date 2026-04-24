@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class AudioManager : ManagerBase
+public class AudioManager : GlobalManagerBase<AudioManager>
 {
-    public override void Init()
+    protected override void OnInit()
     {
         //AudioManager 초기화 로직 추가
     }

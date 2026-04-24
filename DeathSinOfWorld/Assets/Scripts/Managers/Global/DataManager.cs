@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class DataManager : ManagerBase
+public class DataManager : GlobalManagerBase<DataManager>
 {
-    public override void Init()
+    protected override void OnInit()
     {
         //DataManager 초기화 로직 추가
     }

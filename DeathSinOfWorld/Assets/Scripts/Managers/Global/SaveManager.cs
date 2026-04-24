@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class SaveManager : ManagerBase
+public class SaveManager : GlobalManagerBase<SaveManager>
 {
-    public override void Init()
+    protected override void OnInit()
     {
         //SaveManager 초기화 로직 추가
     }
