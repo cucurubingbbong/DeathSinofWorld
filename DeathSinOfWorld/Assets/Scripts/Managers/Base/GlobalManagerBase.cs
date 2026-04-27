@@ -8,7 +8,6 @@ public abstract class GlobalManagerBase<T> : ManagerBase where T : GlobalManager
     {
         if (Instance != null)
         {
-            Debug.LogWarning($"An instance of {typeof(T).Name} already exists. Destroying the new instance.");
             Destroy(gameObject);
             return;
         }
